@@ -95,16 +95,28 @@ Build five pairs of **canonically equivalent** strings, the first of each being 
 **Using only Unicode**, print out `"HELLO WORLD!"`
 
 ***
+var helloWords = "\u{48}\u{45}\u{4C}\u{4C}\u{4F} \u{57}\u{4F}\u{52}\u{4C}\u{44}\u{21}"
+
+print(helloWords)
+
 ## Question 10
 
 **Using only Unicode**, print out your name.
 
 ***
+
+var beeName = "\u{42}\u{69}\u{61}\u{6E}\u{63}\u{61} \u{42}\u{72}\u{6F}\u{77}\u{6E}"
+
+print(beeName)
+
 ## Question 11
 
 **Using only Unicode**, print out `"HELLO WORLD!"` in another language.
 
 ***
+var diffWords = "\u{4B}\u{4F}\u{4E}\u{27}\u{4E}\u{43}\u{48}\u{49}\u{57}\u{41} \u{53}\u{45}\u{4B}\u{41}\u{49}\u{21}"
+
+print(diffWords)
 ## Question 12
 
 Print the below flower box using the following information.
@@ -128,6 +140,15 @@ Flower Box:
 ```
 
 ***
+var flower = "\u{2698}"
+var verticalSymbol = "\u{007c}"
+var horizontalSymbol = "\u{005f}"
+
+let outline = String(repeating: horizontalSymbol, count: 11)
+print(outline)
+
+print("")
+
 ## Question 13
 
 Write a program that sets up a chess board using Unicode.
@@ -182,6 +203,11 @@ Output:
 `"olleH"`
 
 ***
+var aString = "this string has 29 characters"
+var reverse = ""
+
+print(String(aString.reversed()))
+
 ## Question 16
 
 You are given a string stored in variable `aString`. Print `true` if `aString` is a palindrome, and `false` otherwise. A **palindrome** is a string which reads the same backward or forward.
