@@ -117,6 +117,7 @@ print(beeName)
 var diffWords = "\u{4B}\u{4F}\u{4E}\u{27}\u{4E}\u{43}\u{48}\u{49}\u{57}\u{41} \u{53}\u{45}\u{4B}\u{41}\u{49}\u{21}"
 
 print(diffWords)
+
 ## Question 12
 
 Print the below flower box using the following information.
@@ -142,12 +143,16 @@ Flower Box:
 ***
 var flower = "\u{2698}"
 var verticalSymbol = "\u{007c}"
-var horizontalSymbol = "\u{005f}"
-
+var horizontalSymbol = "\u{005f} "
 let outline = String(repeating: horizontalSymbol, count: 11)
 print(outline)
-
-print("")
+for _ in 1...7 {
+for _ in 1...5 {
+print("\(verticalSymbol) \(flower)", terminator: " ")
+}
+print(verticalSymbol)
+}
+print(outline)
 
 ## Question 13
 
@@ -233,6 +238,15 @@ Output:
 `false`
 
 ***
+var aString = "anutforajaroftuna"
+
+if aString == String(aString.reversed()) {
+print("true")
+} else {
+print("false")
+}
+
+
 ## Question 17
 
 You are given a string stored in variable `problem`. Write code so that you print each word of the string on a new line.
@@ -263,6 +277,11 @@ lines
 ```
 
 ***
+var problem = "split this string into words and print them on separate lines"
+
+for b in problem.components(separatedBy: " ") {
+    print("\(b)")
+}
 ## Question 18
 
 You are given a string stored in variable `problem`. Write code that prints the longest word in the string.
